@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Card</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="new.js"></script>
+</head>
+<body>
+
+<div class="product-card">
+    <img src="./ab.jpg" alt="Product Image">
+    <h2>Sample Product</h2>
+    <br>
+    <br>
+
+    <div class="price">Rs. <span id="unit-price">15</span></div>
+    <br>
+    <p>This is a short description of the product.</p>
+    <label for="quantity">Quantity:</label>
+    <input type="number" id="quantity" value=" " min="1" onchange="updateTotalPrice()">
+    <div class="total-price">Total Price: Rs. <span id="total-price">15</span></div>
+    <button onclick="buyNow()">Buy Now</button>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
